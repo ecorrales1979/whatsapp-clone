@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial,
+    "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+  font-size: 14px;
+  color: #4b4b4b;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #dfdfdf;
+  background-image: linear-gradient(to bottom, #dddbd1, #d2dbdc);
+}
+
+input,
+button {
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial,
+    "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+  width: 6px !important;
+  height: 6px !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[role="button"] {
+  cursor: pointer;
+}

@@ -1,0 +1,141 @@
+.chatFooter {
+  display: block;
+  min-height: 62px;
+  -webkit-order: 3;
+  order: 3;
+  position: relative;
+  -webkit-flex: none;
+  flex: none;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  .footerContent {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    max-width: 100%;
+    min-height: 62px;
+    position: relative;
+    z-index: 2;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    background-color: #efefef;
+    padding: 5px 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+
+    .inputContainer {
+      box-sizing: border-box;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 20px;
+      min-height: 20px;
+      min-width: 0;
+      outline: none;
+      width: inherit;
+      will-change: width;
+      background-color: #ffffff;
+      border-color: #fff;
+      border-radius: 21px;
+      border-style: solid;
+      border-width: 1px;
+      padding: 9px 12px 11px 12px;
+      margin: 5px 10px;
+
+      .inputBox {
+        position: relative;
+        -webkit-flex: 1;
+        flex: 1;
+        display: -webkit-flex;
+        display: flex;
+        overflow: hidden;
+        padding-right: 0px;
+
+        .inputLabel {
+          color: #a4a4a4;
+          font-size: 15px;
+          line-height: 20px;
+          pointer-events: none;
+          position: absolute;
+          top: 0px;
+          left: 2px;
+          transition: opacity 0.08s linear;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          z-index: 100;
+          z-index: 2;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        .input {
+          font-size: 15px;
+          font-weight: normal;
+          max-height: 100px;
+          min-height: 20px;
+          outline: none;
+          overflow-x: hidden;
+          overflow-y: auto;
+          position: relative;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+          z-index: 1;
+          line-height: 20px;
+          width: 100%;
+          -webkit-user-select: text;
+          -moz-user-select: text;
+          -ms-user-select: text;
+          user-select: text;
+        }
+      }
+    }
+
+    .sendButtonContainer {
+      box-sizing: border-box;
+      min-height: 52px;
+      padding: 5px 10px;
+
+      .sendButtonContent {
+        width: 24px;
+        transition: width 0.18s ease-in-out;
+        -webkit-flex: 0 0 auto;
+        flex: 0 0 auto;
+        margin-top: 4px;
+        cursor: default;
+
+        button {
+          outline: none;
+          border: 0;
+          padding: 0;
+          background: none;
+          cursor: pointer;
+          z-index: 2;
+          position: absolute;
+          bottom: 18px;
+
+          svg {
+            display: block;
+            pointer-events: none;
+            overflow: hidden;
+            isolation: isolate;
+            width: 24px;
+            height: 24px;
+            fill: #8a8f92;
+          }
+        }
+      }
+    }
+  }
+}

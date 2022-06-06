@@ -1,6 +1,8 @@
+import { Chat } from './pages/Chat'
+
 function App() {
   return (
-    <div>Hello world</div>
+    <Chat />
   )
 }
 

@@ -1,0 +1,48 @@
+.messageRow {
+  position: relative;
+  padding-left: 9%;
+  padding-right: 9%;
+  margin-bottom: 2px;
+
+  &.center {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 1024px) {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  @media (max-width: 968px) {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+
+  @media (max-width: 912px) {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  @media (max-width: 856px) {
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+  }
+
+  @media (max-width: 800px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  &.last {
+    margin-bottom: 12px;
+  }
+}
